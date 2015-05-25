@@ -1,0 +1,133 @@
+/*****************************************************************/
+/* RESET */
+/*****************************************************************/
+form input[type="text"] {
+    padding: 0;
+}
+
+/*****************************************************************/
+/* ROOTLEVEL ELEMETS */
+/*****************************************************************/
+body {
+    background-color: lightgray;
+}
+
+
+/*****************************************************************/
+/* WRAPPER */
+/*****************************************************************/
+.page {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+/*****************************************************************/
+/* HEADER */
+/*****************************************************************/
+header {
+    min-height: 50px;
+    width: 100%;
+    display: inline-block;
+    content: "";
+    background-color: lightblue;
+}
+
+header a {
+    color: black;
+    text-decoration: none;
+}
+
+header .header-new-note {
+    float: left;
+}
+
+header .header-switch-design {
+    float: right;
+}
+
+
+
+/*****************************************************************/
+/* FILTER AREA */
+/*****************************************************************/
+.filter {
+    width: 100%;
+    min-height: 50px;
+    display: inline-block;
+    content: "";
+    background-color: lightgreen;
+}
+
+.filter .filter-options {
+    float: left;
+}
+
+.filter-finished {
+    float: right;
+}
+
+
+
+/*****************************************************************/
+/* GLOBAL */
+/*****************************************************************/
+
+
+.btn {
+    display: inline-block;
+    background-color: white;
+    padding: 5px;
+    border: 2px solid black;
+    box-shadow: 5px 5px 2.5px #888888;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.spacer {
+    height: 70px;
+}
+
+
+/*****************************************************************/
+/* FORM */
+/*****************************************************************/
+form {
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    content: '';
+    background-color: #888888;
+    padding: 20px;
+}
+
+form table {
+    width: 100%;
+}
+
+form td:first-child {
+    width: 50%;
+}
+
+form td:nth-child(2) {
+    width: 50%;
+}
+
+form input {
+    width: 100%;
+}
+
+form textarea {
+    width: 100%;
+    height: 100px;
+}
+
+form input[type="checkbox"] {
+    width: 5%;
+}
+
+form .cancel {
+    width: 20%;
+    margin: 15px 0;
+    float: right;
+}
