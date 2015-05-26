@@ -6,7 +6,7 @@
     <link href="css/style.css" rel="stylesheet" />
     <script src="js/script.js" type="text/javascript"></script>
 </head>
-<body>
+<body onload="getStyleInNewNodeEditor();" id="page">
 <div class="page">
     <header>
         <div class="header-new-note">
@@ -14,12 +14,15 @@
         </div>
 
         <div class="header-switch-design">
-            <select>
-                <option value="blue_white">Blue and White</option>
-                <option value="blue_white">Black and Gray</option>
-                <option value="blue_white">Orange and Black</option>
-            </select>
-        </div>
+            <form name="skin-selector" onchange="javascript:styleSwitcher();">
+                <select id="skin-selector">
+                    <option value="none">Bitte wählen</option>
+                    <option value="blue_white">Blue and White</option>
+                    <option value="black_gray">Black and Gray</option>
+                    <option value="orange_black">Orange and Black</option>
+                </select>
+            </form>
+         </div>
     </header>
     <div class="filter">
         <div class="filter-options">
@@ -29,6 +32,23 @@
         </div>
         <div class="filter-finished">
                 <a href="javascript:showFinishedDate();" title="New Node" class="btn">Show finished</a>
+        </div>
+    </div>
+    <div class="data-output">
+        <div class="content-title">
+            Title
+        </div>
+        <div class="content-description">
+            Description
+        </div>
+        <div class="content-importance">
+            Wichtigkeit
+        </div>
+        <div class="content-date">
+            Datum
+        </div>
+        <div class="content-edit-node">
+            <a href="#" title="edit">bearbeiten</a>
         </div>
     </div>
 </div>

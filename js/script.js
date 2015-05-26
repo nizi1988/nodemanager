@@ -43,3 +43,28 @@ function setArrayToLocalStorage() {
         document.write("LocalStorage wir momentan nicht unterstützt");
     }
 }
+
+function styleSwitcher() {
+    var selectorById = document.getElementById("skin-selector");
+    var styleValue = selectorById.options[selectorById.selectedIndex].value;
+
+    if(localStorage) {
+        localStorage.setItem('styleValue', JSON.stringify(styleValue));
+
+        if(localStorage.getItem("styleValue")) {
+            localStorage.setItem('styleValue', JSON.stringify(styleValue));
+                location.reload();
+        }
+    } else {
+        document.write("LocalStorage wir momentan nicht unterstützt");
+    }
+}
+
+function getStyleInNewNodeEditor() {
+    if(localStorage.getItem("styleValue")){
+        var data =  localStorage.getItem("styleValue");
+
+        var cleanString = data.replace(/"/gi, "");
+        document.getElementById("page").className = cleanString;
+    }
+}

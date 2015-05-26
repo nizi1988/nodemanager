@@ -68,6 +68,52 @@ header .header-switch-design {
 
 
 
+
+
+/*****************************************************************/
+/* FILTER AREA */
+/*****************************************************************/
+.data-output {
+    width: 100%;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+.data-output div {
+    float: left ;
+}
+
+.data-output .content-title {
+    min-height: 60px;
+    background-color: #178fe5;
+    min-width: 10%;
+}
+
+.data-output .content-description {
+    min-height: 60px;
+    background-color: #178fe5;
+    min-width: 60%;
+}
+
+.data-output .content-importance {
+    min-height: 60px;
+    background-color: #178fe5;
+    min-width: 10%;
+}
+
+.data-output .content-date {
+    min-height: 60px;
+    background-color: #178fe5;
+    min-width: 10%;
+}
+
+.data-output .content-edit-node {
+    min-height: 60px;
+    background-color: #178fe5;
+    min-width: 10%;
+}
+
+
 /*****************************************************************/
 /* GLOBAL */
 /*****************************************************************/
@@ -130,4 +176,13 @@ form .cancel {
     width: 20%;
     margin: 15px 0;
     float: right;
+}
+
+
+
+/*****************************************************************/
+/* DIFERENT STYLES */
+/*****************************************************************/
+body .blue_white {
+    background-color: blueviolet;
 }
