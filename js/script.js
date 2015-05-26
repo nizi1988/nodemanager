@@ -1,8 +1,6 @@
 /**
  * Created by Workstation on 25.05.2015.
  */
-console.log("Hello World");
-
 function filterByFinishingDate() {
     console.log("Hello sortByFinishingDate");
 }
@@ -27,21 +25,28 @@ function getDate() {
 function setArrayToLocalStorage() {
     var title = document.getElementById("title").value;
     var description = document.getElementById("description").value;
-   // var importance = document.querySelector('.importance:checked').value;
     var date = document.getElementById("date").value;
 
-    var objFormData = {
+    var keyvalueToArray = {
         'title' : title,
         'description' : description,
-       // 'importance' : importance,
         'date' : date
     };
+    if(!localStorage.getItem("keyvalueToArray")) {
+        localStorage.setItem('keyvalueToArray', JSON.stringify(keyvalueToArray));
 
-    if(localStorage) {
-        localStorage.setItem('formDataObject', JSON.stringify(objFormData));
-    } else {
-        document.write("LocalStorage wir momentan nicht unterstützt");
+        var keyvalueToArray = localStorage.getItem("keyvalueToArray");
     }
+
+    var keyvalueToArray = JSON.parse(localStorage.getItem("keyvalueToArray"));
+    localStorage.setItem("keyvalueToArray", JSON.stringify(keyvalueToArray));
+    keyvalueToArray.push(title);
+
+    console.log(keyvalueToArray);
+
+    /*das problem ist, das es irgendwie kein Array ist*/
+
+    window.location.replace("/index.html");
 }
 
 function styleSwitcher() {
