@@ -184,5 +184,16 @@ form .cancel {
 /* DIFERENT STYLES */
 /*****************************************************************/
 body .blue_white {
-    background-color: blueviolet;
+
+}
+body.blue_white {
+    background-color: #178fe5;
+}
+
+body.black_gray {
+    background-color: darkgrey;
+}
+
+body.orange_black {
+    background-color: orange;
 }
